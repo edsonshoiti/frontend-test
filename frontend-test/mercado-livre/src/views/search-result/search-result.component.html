@@ -1,0 +1,18 @@
+<search-box></search-box>
+<div class="search-result-component content-center">
+  <div class="content-width">
+    <div class="categories">
+      <ul>
+        <li *ngFor="let category of categories;let i = index;" >
+        {{ category}} <span *ngIf="i != categories.length - 1"> > </span> 
+        </li>
+      </ul>
+    </div>
+    <div class="items-result">   
+      <search-item
+        *ngFor="let item of items | slice: '0': '4'; trackBy: trackItemId" 
+        [item]="item"
+      ></search-item>
+    </div>
+  </div>
+</div>

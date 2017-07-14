@@ -1,0 +1,48 @@
+.search-box-component {
+  background-color: #FFE600;
+  height: 54px;
+  align-items: center;
+  .href-logo {
+    position: relative;
+    z-index: 1;
+  }
+  .logo {
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .form-search  {
+    position: relative;
+    padding: 5px 5px 5px 70px;
+    height: 40px;
+    .input-search {
+      position: relative;
+      border: 0px;
+      border-radius: 3px;
+      padding: 5px 60px 5px 15px;
+      font-size: 18px;
+      color: #333333;
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      outline: none;
+    }
+    .btn-submit {       
+      background-image: url("/assets/search-box/ic_Search.png");
+      height: 40px;
+      width: 36px;
+      background-color: #EEEEEE;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      border: 0px;
+      border-radius: 0px 3px 3px 0px;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}

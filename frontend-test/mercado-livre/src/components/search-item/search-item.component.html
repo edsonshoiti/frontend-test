@@ -1,0 +1,10 @@
+<div class="search-item" (click)="goToDetail(item.id)">
+  <img class='picture' [src]="item.picture"/>
+  <div class="item-info">
+    <div class="price">$ {{ item.price.amount }}
+      <span *ngIf='item.free_shipping'><img class="logo" src="/assets/item/ic_shipping.png"></span>
+    </div>
+    <div class="title">{{ item.title }}<br>{{ item.condition }}</div>
+  </div>
+  <div class="location">{{ item.location }}</div>
+</div> 

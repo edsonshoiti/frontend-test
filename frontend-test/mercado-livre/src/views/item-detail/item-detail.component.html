@@ -1,0 +1,27 @@
+﻿<search-box></search-box>
+<div class="item-detail-component content-center" *ngIf="item">
+  <div class="content-width">
+    <div class="categories">
+      <ul>
+        <li *ngFor="let category of item.categories;let i = index;" >
+        {{ category}} <span *ngIf="i != item.categories.length - 1"> > </span> 
+        </li>
+      </ul>
+    </div>
+    <div class="items-result">   
+      <div class="wrapper-image">
+        <img class='picture' [src]="item.picture"/>
+      </div>
+      <div class="item-info">
+        <div class="condition-quantity">{{ item.condition }} - {{ item.sold_quantity }} vendidos</div>
+        <div class="title">{{ item.item.title }}</div>
+        <div class="price">$ {{ item.price.amount }}</div>
+        <button class="btn-buy">Comprar</button>
+      </div>
+      <div class="item-description">
+        <div class="title">Descrição do produto</div>
+        <div class="text">{{ item.description }}</div>
+      </div>
+    </div>
+  </div>
+</div>

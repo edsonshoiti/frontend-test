@@ -1,0 +1,49 @@
+@import './../../scss/variables';
+
+.item-detail-component {
+  .wrapper-image {
+    display: inline-block;
+    width: 680px;
+  }
+  .items-result {
+    padding: 32px;
+  }
+  .item-info {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(#{$main-width} - 750px );
+    color: #333333;
+    .condition-quantity {
+      font-size: 12px;
+      padding-bottom: 16px;
+    }
+    .title {
+      font-size: 24px;
+    }
+    .price {
+      padding: 32px 0px;
+      font-size: 46px;
+    }
+    .btn-buy {
+      background-color: #3483FA;
+      width: 100%;
+      border: 0px;
+      padding: 10px;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+    }
+  }
+  .item-description {
+    width: 680px;
+    margin-top: 120px;
+    .title {
+      font-size: 28px;
+    }
+    .text {
+      font-size: 16px;
+      padding: 32px 0px;
+      color: #999999;
+    }
+  }
+}

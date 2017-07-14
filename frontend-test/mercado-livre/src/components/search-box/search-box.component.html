@@ -1,0 +1,9 @@
+<header class="search-box-component content-center">
+  <div class="content-width">
+    <img class="logo" src="/assets/search-box/Logo_ML.png"  (click)="goToHome()">
+    <form class="form-search" name="formSearch" (ngSubmit)="onSubmit()">
+      <input class="input-search" [(ngModel)]="item" placeholder="Nunca dejes de buscar" name="item"/>
+      <button class="btn-submit" type="submit"></button> 
+    </form>
+  </div>
+</header>
